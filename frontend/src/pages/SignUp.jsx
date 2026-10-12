@@ -11,8 +11,8 @@ const SignUp = () => {
     const { setSession } = useUserStore()
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
         setError("")
+        e.preventDefault()
 
         if (e.target.password.value !== e.target.
             password2.value) {
